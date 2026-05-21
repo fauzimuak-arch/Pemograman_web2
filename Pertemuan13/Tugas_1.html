@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Input Data Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .form-container {
+            width: 500px;
+        }
+        h2 {
+            color: #ff9900;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px 5px;
+            vertical-align: middle;
+        }
+        .label-column {
+            width: 150px;
+            font-size: 14px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        /* Penyesuaian lebar input spesifik sesuai gambar */
+        .input-short { width: 60% !important; }
+        .input-medium { width: 40% !important; }
+        
+        .button-group {
+            padding-top: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 3px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Form Input Data Mahasiswa</h2>
+    
+    <form>
+        <table>
+            <tr>
+                <td class="label-column">ID Mahasiswa / NIM</td>
+                <td><input type="text" class="input-short"></td>
+            </tr>
+            <tr>
+                <td class="label-column">Nama</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="label-column">Jurusan</td>
+                <td>
+                    <select class="input-medium">
+                        <option value="">- Pilih Jurusan -</option>
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="SI">Sistem Informasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-column">Alamat</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="label-column">No. Telp</td>
+                <td><input type="text" class="input-medium"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="button-group">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
